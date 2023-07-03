@@ -26,4 +26,4 @@ function squareAndFindEvens(numbers){
 
 /*ES2015*/
 
-let mySquareAbdFindEvens = numbers => numers.map(num => num * num).filter(evens => evens % 2 === 0);
+let mySquareAbdFindEvens = numbers => numbers.map(num => num * num).filter(evens => evens % 2 === 0);
