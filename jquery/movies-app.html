@@ -1,0 +1,130 @@
+<html lang="en">
+    <head>
+        <title>Movies App</title>
+    </head>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <style>
+        table, td, tr, th{
+            border: 1px solid black;
+            text-align: center;
+        }
+        
+        .remove{
+            background-color: red;
+        }
+    </style>
+    <body>
+        <form action="#" method="get">
+            <input type="text" name="title" placeholder="Movie title" min="2" value="Iron Man">
+            <input type="number" name="rating" placeholder="Rating" min="0" max="10" value="7">
+            <button type="submit">Rate Movie</button>
+        </form>
+        <div class="ratings">
+            <div class="sorting">
+                <select name="sort" id="sort">
+                    <option value="1">Sort title a-z</option>
+                    <option value="2">Sort title z-a</option>
+                    <option value="3">Sort rating 1-10</option>
+                    <option value="4">Sort rating 10-1</option>
+                </select>
+                <button></button>
+            </div>
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Rating</th>
+                    <th>X</th>
+                </tr>
+                <tbody class="t-body">
+                </tbody>
+            </table>
+        </div>
+    </body>
+    <script>
+        let movies = [];
+        let sortVal = 0;
+        const $tBody = $(".t-body");
+        $("#sort").on("change", function(){
+            sortVal = Number(this.value);
+            sort(sortVal);
+            
+            updateTable();
+        })
+        
+        $("form").on("submit", function(e){
+            e.preventDefault();
+            const $inputs = $("input");
+            const [$title, $rating] = [$inputs[0], $inputs[1]];
+            
+            if ($title.value.trim().length >= 2 && $rating.value >= 0){
+                let movie = {
+                    title: $title.value,
+                    rating: $rating.value
+                };
+                
+                $($title).val("");
+                $($rating).val("");
+                movies.push(movie);
+                sort(sortVal)
+                updateTable();
+            }
+        });
+        
+        $($tBody).on("click", "button", function(){
+            let ind = Number($(this).val());
+            movies.splice(ind, 1);
+            updateTable();
+        })
+        
+        function updateTable(){
+            $($tBody).html("");
+            
+            movies.forEach(function(mov, i){
+                let $tr = `<tr><td>${mov.title}</td><td>${mov.rating}</td><td><button class='remove' value='${i}'>X</button></td></tr>`
+                $($tr).appendTo($tBody);
+            })
+        }
+        
+        function sort(num){
+            let sorted = [];
+            switch(num){
+                case 1:
+                case 2:
+                    //sorts alphabetically
+                    let objKeys = movies.map(function(val){
+                        return val.title.toLowerCase();
+                    }).sort();
+                    
+                    objKeys.forEach(function(key){
+                        movies.filter(function(val){
+                            if (val.title.toLowerCase() === key){
+                                sorted.push(val);
+                            }
+                        });
+                    });
+                    break;
+                case 3:
+                case 4:
+                    //sorts numerically
+                    let ratingSet = movies.map(function(val){
+                        return val.rating;
+                    });
+                    
+                    ratingSet = new Set(ratingSet);
+                    let rating = Array.from(ratingSet).sort((a, b)=>(a-b))
+                    
+                    rating.forEach(function(r){
+                        movies.filter(function(item){
+                            if (item.rating === r){
+                                sorted.push(item);
+                            }
+                        });
+                    });
+                    break;
+            }
+            
+            movies = sorted;
+            return num === 2 || num === 4 ? movies.reverse() : movies;
+        }
+    </script>
+</html>
