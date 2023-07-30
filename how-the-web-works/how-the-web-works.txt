@@ -1,0 +1,27 @@
+PART ONE
+1. What is HTTP?
+a) HTTP stands for Hypertext Transfer Protocal, and it's a standard for how computers communicate, or transfer data, on the network (internet).
+
+2. What is a URL?
+a) URL is the human-readable address to an online resource (ex: https://www.google.com)
+
+3. What is a DNS?
+a) DNS is an acronym for 'Domain Name System' which allows computers to point to the IP address of a given URL.
+
+4. What is a query string?
+a) A query string is data with a 'GET' method that's inserted at the end of a URL to send data that the endpoint resource may, or may not, expect it.
+
+5. What are two HTTP verbs and how are they different?
+a) GET and POST: 'GET' is used to request data from the server/endpoint-resource while 'POST' submits data to the server for processing.
+
+6. What is an HTTP request?
+a) An HTTP request is a method that the client can use to interact with an endpoint-resource/server (ex: GET, POST, PUT, DELETE)
+
+7. What is an HTTP response?
+a) The response that a server/resource sends back to the client depending on the request.
+
+8. What is an HTTP header? Give a couple examples of request and response headers you have seen.
+a) Additional markup that allows a client to request more information from a resource. Cache is one form of a common header familiar with.
+
+9. What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?
+a) A browser makes a request (with information) to a resource, destination resource responds with the information requested, along with notes to about the new information (if found), then the browser parses through the HTML data from the response to display the information.
