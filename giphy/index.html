@@ -1,0 +1,22 @@
+<html lang="en">
+    <head>
+        <title>Giph</title>
+        <link rel="stylesheet" type="text/css" href="app.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <form id="giphy" method="POST" action="#">
+                <input type="text" placeholder="Search" id="search">
+                <br>
+                <br>
+                <button id="process" type="submit">Search</button>
+                <button id="delete">Remove Images</button>
+            </form>
+            <div class="load" id="data-load">
+            </div>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>
