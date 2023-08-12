@@ -1,0 +1,73 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Copse'
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+button{
+    padding: 1rem;
+    font-size: 2rem;
+    margin: 1rem;
+    color: #FFF;
+    color: #28a200;
+    border-color: #28a200;
+    border-radius: 1rem;
+    background-color: #FFF;
+}
+
+.card{
+    background-color: #060ce9;
+    padding: 5rem;
+    display: inline-block;
+    border: 0.5rem solid #AAA;
+    border-radius: 1rem;
+    width: 60%;
+    height: 27rem;
+}
+
+.category{
+    font-size: 3rem;
+    border: 2px solid #AAA;
+    margin: auto;
+    display: inline-block;
+    padding: 0 5rem;
+    border-radius: 0.5rem;
+    color: #FFF;
+}
+
+#que{
+    font-size: 1.3rem;
+    color: #FFF;
+    padding: 4rem 0;
+}
+
+.answer{
+    color: red;
+    font-size: 1.3rem;
+}
+
+.hidden{
+    display: none;
+}
