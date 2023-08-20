@@ -1,0 +1,103 @@
+/* Lists of stories */
+*{
+    box-sizing: border-box;
+}
+
+.stories-list {
+  margin: 20px 5px;
+}
+
+.stories-list > li {
+  color: gray;
+  font-size: 0.8rem;
+  margin: 10px 0;
+}
+
+#stories-loading-msg {
+  font-weight: bold;
+  font-size: 150%;
+  margin: 20px 30px;
+}
+
+
+/* Individual stories */
+
+.story-link {
+  color: black;
+  font-size: 0.85rem;
+  font-weight: normal;
+  margin: 18px 0;
+    font-size: 16px;
+}
+
+.story-link:hover {
+  text-decoration: none;
+}
+
+.story-author{
+    font-size: 1.3rem;
+    color: green;
+}
+
+.story-user {
+    color: orange;
+    font-size: 23px;
+}
+
+.flat-outline{
+    box-shadow: none;
+    border: 1px solid #AAA;
+}
+
+.story-form textarea{
+    position: relative;
+    resize: none;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    height: 8rem;
+    border: 1px solid #AAA;
+}
+
+.flat-outline:focus{
+    box-shadow: none;
+    border-color: #000;
+}
+
+.fav{
+    color: #AAA;
+    display: inline-block;
+    height: 30px;
+    background-color: #0000;
+    border: none;
+    padding: 0;
+}
+
+.is-favorite{
+    color: green;
+}
+
+#toggle-favs{
+    position: relative;
+    width: 8rem;
+    margin: 0.5rem;
+}
+
+.remove{
+    color: #E20;
+    width: 30px;
+    height: 30px;
+}
+
+.flexed{
+    border-bottom:  1px solid #DDD;
+    padding: 2rem 0;
+    display: flex;
+}
+
+p{
+    margin: 0.5rem 0;
+}
+
+li div{
+    padding: 0 4px
+}
