@@ -1,0 +1,8 @@
+INFORMATIONAL INTERVIEW DRAFT
+
+"Hi! Thank you for taking the time out to speak with me about your professional life.
+I'm really looking forward to gain a better insight as to where 
+I'd fit in any company as an Entry-level Software Engineer.
+You mentioned on your profile that you were involved in creating
+the latest design as a backend-engineer for your company's new feature.
+How much do you feel you've contributed to the finished product?"
