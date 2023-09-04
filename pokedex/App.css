@@ -1,0 +1,15 @@
+.app{
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header{
+    font: 1.7rem sans-serif;
+    color:  #AAA;
+    font-weight: 600;
+}
+
+.items{
+    padding: 0 2rem;
+}

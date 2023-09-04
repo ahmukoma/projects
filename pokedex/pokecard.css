@@ -1,0 +1,25 @@
+.pokecard{
+    padding: 0.7rem 0;
+}
+
+.pokecard{
+    display: inline-block;
+    width: 8rem;
+    margin: 2rem;
+    border-radius: 0.7rem;
+    background-color: #CCC;
+}
+
+.pokecard *{
+    margin: 0;
+}
+
+.pokecard-title{
+    color: #00F;
+    font: 0.8rem sans-serif;
+    font-weight: 600;
+}
+
+.pokecard-desc{
+    font: 0.7rem sans-serif;
+}
