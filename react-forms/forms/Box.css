@@ -1,0 +1,13 @@
+.Box{
+    display: flex;
+    margin: 4px 0;
+}
+
+.Box-delete{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 0;
+    margin: 0 4px;
+    background-color: red;
+}
