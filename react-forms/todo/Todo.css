@@ -1,0 +1,24 @@
+.Todo{
+    text-align: center;
+    margin: auto;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: #AAA1;
+}
+
+.Todo-task{
+    padding: 0 0.5rem;
+}
+
+.Todo-task, .Todo-remove{
+    margin: auto;
+    display: inline-block;
+}
+
+.Todo-remove{
+    margin: auto;
+    background-color: rgb(223, 54, 24);
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
