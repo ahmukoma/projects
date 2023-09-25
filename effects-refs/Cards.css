@@ -1,0 +1,20 @@
+.DeckOfCards-cards{
+    text-align: center;
+}
+
+.DeckOfCards-container{
+    width: 400px;
+    height: 400px;
+    margin: 1rem auto;
+    text-align: center;
+    background-color: #AAA;
+    display: flex;
+}
+
+.Card{
+    margin: auto;
+}
+
+.DeckOfCards-btn{
+    margin: 0 0.4rem;
+}
