@@ -32,15 +32,15 @@ class Stack {
   pop() {
       let end = this.last;
       let node = this.first;
-      while(node){
-          if (node.next){
-              if(!node.next.next){
-                  node.next = null;
-              }
+      
+      while(node.next){
+          if (!node.next.next){
+              node.next = null
+          }else{
+              node = node.next;
           }
-          
-          node = node.next;
       }
+      
       this.size = this.size - 1;
       return end;
   }

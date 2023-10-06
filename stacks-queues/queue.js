@@ -32,8 +32,8 @@ class Queue {
   dequeue() {
       let req = this.first;
       this.first = this.first.next;
-      return req === null || this.size === 0 ? null : req;
       this.size--;
+      return req === null || this.size === 0 ? null : req;
   }
 
   /** peek(): return the value of the first node in the queue. */
