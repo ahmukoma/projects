@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+    list-style: none;
+}
+
+.App{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.VendingMachine{
+    margin: auto;
+    text-align: center;
+    background-color: #F8F8F8;
+}
+
+.VendingMachine-snacks{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.Snack{
+    position: relative;
+    border: 2px solid #AAA;
+    border-radius: 1rem;
+    width: 175px;
+    font-size: 1.2rem;
+    margin: 0.4REM auto;
+    padding: 3rem 1rem;
+
+}
+
+ul{
+    background-color: #AAA;
+}
+
+ul li{
+    color: red;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 4px;
+}
+
+li a{
+    text-decoration: none;
+}
+
+.drop{
+    padding: 5rem;
+}
